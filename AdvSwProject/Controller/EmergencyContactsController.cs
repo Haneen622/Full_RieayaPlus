@@ -1,15 +1,4 @@
-﻿//using Microsoft.AspNetCore.Mvc;
-
-//namespace AdvSwProject.Controllers
-//{
-//    public class EmergencyContactsController : Controller
-//    {
-//        public IActionResult Index()
-//        {
-//            return View();
-//        }
-//    }
-//}
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AdvSwProject.Data;

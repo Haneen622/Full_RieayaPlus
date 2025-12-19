@@ -402,18 +402,13 @@
         </div>
 
     </section>
-    <!-- <section class="from_our_seniors dark:bg-gray-900 " id="services">
-    <h1 class="sevicesAnimation text-center font-bold text-4xl service_title animate__animated animate__backInUp animate__delay-0.5s dark:text-gray-100 pt-10">
-      from our seniors
-    </h1> -->
+    
     <section class="Medication_Reminder from_our_seniors dark:bg-gray-900" id="Medication_Reminder2">
         <h1 class="sevicesAnimation text-center font-bold text-4xl service_title animate__animated animate__backInUp animate__delay-0.5s dark:text-gray-100 pt-10">Medication Reminder</h1>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto mt-6">
             <button style="background-color:#7BCDF0" class="hover:bg-[#64b9e0] dark:bg-[#7BCDF0] dark:hover:bg-[#64b9e0] text-white font-medium text-sm px-5 py-2 rounded-md transition w-52" onclick="document.getElementById('addMedicationModal').showModal()">Add New Medication</button>
-            @* <button onclick="openImageOptions()" class="bg-gray-700 hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700 text-white font-medium text-sm px-5 py-2 rounded-md flex items-center justify-center gap-2 transition w-52">
-                <i class="fas fa-qrcode text-sm"></i> Add via QR Code
-            </button> *@
+            
             <input type="file" id="qrInput" accept="image/*" style="display:none" capture="environment" onchange="handleImage(this)">
         </div>
 
@@ -546,155 +541,7 @@
             </form>
         </dialog>
     </section>
-   @*  <section class="from_our_seniors  dark:bg-gray-900 " id="Entertainment2">
-        <h1 class="sevicesAnimation text-center font-bold text-4xl service_title animate__animated animate__backInUp animate__delay-0.5s dark:text-gray-100 pt-10">
-            Entertainment
-        </h1>
-      
-        <div class="entertainment bg-r" id="entertainment">
-            <div class="container">
-                <div class="main-heading">
-                    <div class="flex justify-center mb-10">
-                        <div class="dropdown" id="categoryDropdown">
-                            <div class="dropdown-overlay" onclick="closeDropdown()"></div>
-
-                            <button class="dropdown-button" onclick="toggleDropdown()">
-                                <span id="selectedCategory">All Categories</span>
-                                <i class="fas fa-chevron-down dropdown-icon"></i>
-                            </button>
-
-                            <div class="dropdown-menu">
-                                <a asp-controller="Home" asp-action="Index"
-                                   class="dropdown-item active" data-value="all">
-                                    <i class="fas fa-th-large mr-2"></i>
-                                    All Categories
-                                </a>
-                                <a asp-controller="Home" asp-action="Music"
-                                   class="dropdown-item" data-value="music">
-                                    <i class="fas fa-music mr-2"></i>
-                                    Music
-                                </a>
-                                <a asp-controller="Home" asp-action="Games"
-                                   class="dropdown-item" data-value="games">
-                                    <i class="fas fa-gamepad mr-2"></i>
-                                    Games
-                                </a>
-                                <a asp-controller="Home" asp-action="TheaterDrama"
-                                   class="dropdown-item" data-value="drama">
-                                    <i class="fas fa-theater-masks mr-2"></i>
-                                    Drama & Theatre
-                                </a>
-                                <a asp-controller="Home" asp-action="Books"
-                                   class="dropdown-item" data-value="books">
-                                    <i class="fas fa-book mr-2"></i>
-                                    Books & Articles
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Owl Carousel Slider -->
-            <div class="owl-carousel owl-theme px-10" id="entertainment-carousel">
-                <div class="box">
-                    <img src="~/images/musicc.jpg" alt="Music">
-                    <div class="caption">
-                        <h4><a asp-controller="Home" asp-action="Music" class="underline-none">Music</a></h4>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="~/images/games.jpg" alt="Games">
-                    <div class="caption">
-                        <h4><a asp-controller="Home" asp-action="Games" class="underline-none">Games</a></h4>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="~/images/Theatre.jpg" alt="Drama & Theatre">
-                    <div class="caption">
-                        <h4><a asp-controller="Home" asp-action="TheaterDrama" class="underline-none">Drama & Theatre</a></h4>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="~/images/books.jpg" alt="Books">
-                    <div class="caption">
-                        <h4><a asp-controller="Home" asp-action="Books" class="underline-none">Books & Articles</a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section> *@
-   @*  <section class="from_our_seniors dark:bg-gray-900" id="Entertainment2">
-        <h1 class="sevicesAnimation text-center font-bold text-4xl service_title animate__animated animate__backInUp animate__delay-0.5s dark:text-gray-100 pt-10">
-            Entertainment
-        </h1>
-
-        <div class="entertainment bg-r" id="entertainment">
-            <div class="container">
-                <div class="main-heading">
-                    <div class="flex justify-center mb-10">
-                        <div class="dropdown" id="categoryDropdown">
-                            <div class="dropdown-overlay" onclick="closeDropdown()"></div>
-
-                            <button class="dropdown-button" onclick="toggleDropdown()">
-                                <span id="selectedCategory">All Categories</span>
-                                <i class="fas fa-chevron-down dropdown-icon"></i>
-                            </button>
-
-                            <div class="dropdown-menu">
-                                <a href="@Url.Action("Index", "Home")" class="dropdown-item active" data-value="all">
-                                    <i class="fas fa-th-large mr-2"></i> All Categories
-                                </a>
-                                <a href="@Url.Action("Music", "Home")" class="dropdown-item" data-value="music">
-                                    <i class="fas fa-music mr-2"></i> Music
-                                </a>
-                                <a href="@Url.Action("Games", "Home")" class="dropdown-item" data-value="games">
-                                    <i class="fas fa-gamepad mr-2"></i> Games
-                                </a>
-                                <a href="@Url.Action("TheaterDrama", "Home")" class="dropdown-item" data-value="drama">
-                                    <i class="fas fa-theater-masks mr-2"></i> Drama & Theatre
-                                </a>
-                                <a href="@Url.Action("Books", "Home")" class="dropdown-item" data-value="books">
-                                    <i class="fas fa-book mr-2"></i> Books & Articles
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Owl Carousel Slider -->
-            <div class="owl-carousel owl-theme px-10" id="entertainment-carousel">
-                <div class="box">
-                    <img src="~/images/musicc.jpg" alt="Music">
-                    <div class="caption">
-                        <h4><a href="@Url.Action("Music", "Home")" class="underline-none">Music</a></h4>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="~/images/games.jpg" alt="Games">
-                    <div class="caption">
-                        <h4><a href="@Url.Action("Games", "Home")" class="underline-none">Games</a></h4>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="~/images/Theatre.jpg" alt="Drama & Theatre">
-                    <div class="caption">
-                        <h4><a href="@Url.Action("TheaterDrama", "Home")" class="underline-none">Drama & Theatre</a></h4>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="~/images/books.jpg" alt="Books">
-                    <div class="caption">
-                        <h4><a href="@Url.Action("Books", "Home")" class="underline-none">Books & Articles</a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> *@
+  
     <section class="from_our_seniors dark:bg-gray-900" id="Entertainment2">
         <h1 class="sevicesAnimation text-center font-bold text-4xl service_title animate__animated animate__backInUp animate__delay-0.5s dark:text-gray-100 pt-10">
             Entertainment
@@ -856,31 +703,6 @@
 
 
 
-        <!-- القسم الديني -->
-      
-
-      
-
-   @*  <h1 class="sevicesAnimation text-center font-bold text-4xl service_title
-         text-gray-900 dark:text-gray-100 pt-10 mb-8">
-        ATHKAR
-    </h1>
-
-    <div class="w-full flex items-center justify-center mb-10 px-4">
-        <a asp-controller="Home" asp-action="Athkari" class="no-underline text-current">
-            <figure class="rounded-2xl overflow-hidden border shadow-md hover:shadow-lg transition
-             bg-white border-gray-200
-             dark:bg-gray-800 dark:border-gray-700">
-                <img src="~/images/makkafirstpage.jpg"
-                     alt="أذكاري"
-                     class="w-72 h-44 object-cover dark:brightness-90" />
-                <figcaption class="p-3 text-center font-medium
-               text-gray-900 dark:text-gray-100">
-                    أذكاري
-                </figcaption>
-            </figure>
-        </a>
-    </div> *@
     <section class="from_our_seniors dark:bg-gray-900" id="Athkar">
         <h1 class="sevicesAnimation text-center font-bold text-4xl service_title
          text-gray-900 dark:text-gray-100 pt-10 mb-8">
@@ -983,28 +805,7 @@
         </div>
         <script src="~/js/template_home.js" asp-append-version="true"></script>
         <script src="~/js/service_home.js" asp-append-version="true"></script>
-        <!-- <script src="./report_home.js"></script>  -->
-        <!-- <script src="./contact.js"></script> -->
-        <!-- Dark Mode and Profile Toggle Script -->
-        @* here *@
-    @*  <script>
-        window.onload = function() {
-          // بعد 5 ثواني
-          setTimeout(function() {
-            alert("💊 Reminder: Don't forget to take your medicine!");
-          }, 5000);
-
-          // بعد 10 ثواني
-          setTimeout(function() {
-            alert("💧 Reminder: Drink a glass of water!");
-          }, 20000);
-
-          // بعد 15 ثانية
-          setTimeout(function() {
-            alert("🌿 Reminder: Take a moment for prayers and supplications.");
-          }, 40000);
-        }
-    </script>  *@
+      
     <script>
         window.onload = function () {
           // امنع التكرار في نفس الجلسة
@@ -1408,31 +1209,7 @@
               speechSynthesis.speak(utterance); // Speak it
             }
         </script>
-       @*  <script>
-            const toggleButton = document.getElementById('darkModeToggle');
-            const body = document.body;
-
-            toggleButton.addEventListener('click', () => {
-              body.classList.toggle('bg-light');
-              body.classList.toggle('text-dark');
-              body.classList.toggle('bg-dark');
-              body.classList.toggle('text-light');
-
-              // Optional: change button text/icon
-              if (body.classList.contains('bg-dark')) {
-                // toggleButton.textContent = '☀️ Light Mode';
-                toggleButton.classList.remove('btn-outline-secondary');
-                toggleButton.classList.add('btn-outline-light');
-              } else {
-                // toggleButton.textContent = '🌙 Dark Mode';
-                toggleButton.classList.remove('btn-outline-light');
-                toggleButton.classList.add('btn-outline-secondary');
-              }
-            });
-            function logout() {
-               window.location.href = "login.html";
-              }
-        </script> *@
+      
         <script>
             function openImageOptions() {
               // Trigger the hidden input
@@ -1668,24 +1445,7 @@
                 }
             });
         </script>
-       @*  <script>
-            window.onload = function() {
-              // After 1 minute: Medicine reminder
-              setTimeout(function() {
-                alert("💊 Reminder: Don't forget to take your medicine!");
-              }, 60000); // 1 minute
-
-              // After 2 minutes: Water reminder
-              setTimeout(function() {
-                alert("💧 Reminder: Drink a glass of water!");
-              }, 120000); // 2 minutes
-
-              // After 3 minutes: Prayers & supplications reminder
-              setTimeout(function() {
-                alert("🌿 Reminder: Take a moment for prayers and supplications.");
-              }, 180000); // 3 minutes
-            }
-        </script> *@
+      
 
 
 </body>

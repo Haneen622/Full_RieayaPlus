@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvSwProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+865f0f7944cd11cc3bbbc36a87cf636fc2d37643")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvSwProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvSwProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
